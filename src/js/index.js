@@ -1,12 +1,10 @@
 const { body } = require("./const")
 const { ESRCAction } = require("./ESRCAction");
 const { Camera } = require("./components/Camera");
-// const { Canvas } = require("./components/Canvas");
 const { Spinner } = require("./components/Spinner");
 
 const esrc = new ESRCAction();
 const camera = new Camera();
-// const canvas = new Canvas();
 let isRunning = false;
 
 // Start spinner
@@ -80,12 +78,12 @@ function start() {
         }
         
         // Draw
-        document.getElementById("face").innerHTML = "Face=" + esrc.face.getIsDetect();
-        document.getElementById("basicFacialExpression").innerHTML = "Basic Facial Exp.=" + esrc.basicFacialExpression.getEmotionStr();
-        document.getElementById("valenceFacialExpression").innerHTML = "Valence Facial Exp.=" + esrc.valenceFacialExpression.getEmotionStr();
-        document.getElementById("remoteHR").innerHTML = "HR=" + Math.round(esrc.remoteHR.getHR()) + " bpm" + " (" + Math.floor(esrc.progressRatioOnRemoteHR.getProgress()) + "%)";
-        document.getElementById("sdnn").innerHTML = "HRV(SDNN)=" + Math.round(esrc.hrv.getSdnn() * 100) / 100 + " ms2" + " (" + Math.floor(esrc.progressRatioOnHRV.getProgress()) + "%)";
-        document.getElementById("engagement").innerHTML = "Engagement=" + esrc.engagement.getEmotion();
+        document.getElementById("face-value").innerHTML = esrc.face.getIsDetect();
+        document.getElementById("basic-facial-exp-value").innerHTML =  esrc.basicFacialExpression.getEmotionStr();
+        document.getElementById("valence-facial-exp-value").innerHTML = esrc.valenceFacialExpression.getEmotionStr();
+        document.getElementById("hr-value").innerHTML = Math.round(esrc.remoteHR.getHR()) + " bpm" + " (" + Math.floor(esrc.progressRatioOnRemoteHR.getProgress()) + "%)";
+        document.getElementById("hrv-value").innerHTML = Math.round(esrc.hrv.getSdnn() * 100) / 100 + " ms2" + " (" + Math.floor(esrc.progressRatioOnHRV.getProgress()) + "%)";
+        document.getElementById("engagement-value").innerHTML = esrc.engagement.getEmotionStr();
     });
 }
 
