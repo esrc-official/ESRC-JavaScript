@@ -82,7 +82,7 @@ function start() {
         document.getElementById("basic-facial-exp-value").innerHTML =  esrc.basicFacialExpression.getEmotionStr();
         document.getElementById("valence-facial-exp-value").innerHTML = esrc.valenceFacialExpression.getEmotionStr();
         document.getElementById("hr-value").innerHTML = Math.round(esrc.remoteHR.getHR()) + " bpm" + " (" + Math.floor(esrc.progressRatioOnRemoteHR.getProgress()) + "%)";
-        document.getElementById("hrv-value").innerHTML = Math.round(esrc.hrv.getSdnn() * 100) / 100 + " ms2" + " (" + Math.floor(esrc.progressRatioOnHRV.getProgress()) + "%)";
+        document.getElementById("hrv-value").innerHTML = Math.round(esrc.hrv.getSdnn() * 100) / 100 + " ms" + " (" + Math.floor(esrc.progressRatioOnHRV.getProgress()) + "%)";
         document.getElementById("engagement-value").innerHTML = esrc.engagement.getEmotionStr();
     });
 }
