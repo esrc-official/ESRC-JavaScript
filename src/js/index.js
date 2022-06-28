@@ -78,7 +78,7 @@ function start() {
         }
         
         // Draw
-        document.getElementById("face-value").innerHTML = esrc.face.getIsDetect();
+        document.getElementById("face-value").innerHTML = esrc.face.getDetectStr();
         document.getElementById("basic-facial-exp-value").innerHTML =  esrc.basicFacialExpression.getEmotionStr();
         document.getElementById("valence-facial-exp-value").innerHTML = esrc.valenceFacialExpression.getEmotionStr();
         document.getElementById("hr-value").innerHTML = Math.round(esrc.remoteHR.getHR()) + " bpm" + " (" + Math.floor(esrc.progressRatioOnRemoteHR.getProgress()) + "%)";
