@@ -1,5 +1,5 @@
 # ESRC for JavaScript
-This is full screen bio-analysis sample using the [ESRC SDK](https://github.com/esrc-official/ESRC-SDK-JavaScript) for desktop browsers.
+This is full screen face and bio-analysis sample using the [ESRC SDK](https://github.com/esrc-official/ESRC-SDK-JavaScript) for desktop browsers.
 
 [![Platform](https://img.shields.io/badge/platform-JAVASCRIPT-orange.svg)](https://github.com/esrc-official/ESRC-JavaScript)
 [![Languages](https://img.shields.io/badge/language-JAVASCRIPT-orange.svg)](https://github.com/esrc-official/ESRC-JavaScript)
