@@ -130,6 +130,6 @@ class ESRCAction {
     static getInstance() {
         return new ESRCAction();
     }
-}
+    }
 
 export { ESRCAction };
